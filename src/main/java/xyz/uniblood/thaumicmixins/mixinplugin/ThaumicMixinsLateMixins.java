@@ -5,6 +5,7 @@ import com.gtnewhorizon.gtnhmixins.ILateMixinLoader;
 import com.gtnewhorizon.gtnhmixins.LateMixin;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.relauncher.FMLLaunchHandler;
+import xyz.uniblood.thaumicmixins.ThaumicMixins;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,6 +31,8 @@ public class ThaumicMixinsLateMixins implements ILateMixinLoader {
         mixins.add("MixinEventHandlerRunic");
         mixins.add("MixinWarpEvents");
         mixins.add("MixinWandManager");
+
+        mixins.add("MixinTileInfusionMatrix");
 
         if (client) {
             mixins.add("MixinItemShard");
